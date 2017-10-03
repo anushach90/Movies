@@ -31,7 +31,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
                  titleView.setText(movieItem.getTitle());
                  plotView.setText(movieItem.getPlot());
                  ratingView.setText(movieItem.getRating());
-                 dateView.setText(movieItem.getReleaseDate());
+                 dateView.setText(movieItem.getReleaseDate().substring(0,4));
                  Glide.with(this)
                         .load("https://image.tmdb.org/t/p/w185/"+ movieItem.getPosterPath())
                         .into(imgView);
