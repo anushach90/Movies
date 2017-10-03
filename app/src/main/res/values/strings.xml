@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="popular">Popular Movies</string>
+    <string name="top_rated">Top Rated Movies</string>
+    <string name="title_activity_movie_details">MovieDetailsActivity</string>
+    <string name="api_key"></string>
+    <string name="language">en-US</string>
+    <string name="page">1</string>
+    <string name="popular_movie_url">"https://api.themoviedb.org/3/movie/popular"</string>
+    <string name="rated_movie_url">"https://api.themoviedb.org/3/movie/top_rated"</string>
+</resources>
