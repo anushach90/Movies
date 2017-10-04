@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putParcelable("MOVIES-LAYOUT", moviesRView.getLayoutManager().onSaveInstanceState());
-        moviesList = popTopAdapter.getMovies();
-        for(int i=1;i<=moviesList.size();i++){
-            outState.putParcelable("MOVIES-LIST-" + i,popTopAdapter.getMovies().get(i-1));
+        if(popTopAdapter!=null) {
+            moviesList = popTopAdapter.getMovies();
+            for (int i = 1; i <= moviesList.size(); i++) {
+                outState.putParcelable("MOVIES-LIST-" + i, popTopAdapter.getMovies().get(i - 1));
+            }
         }
         super.onSaveInstanceState(outState);
     }
